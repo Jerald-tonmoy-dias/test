@@ -27,6 +27,8 @@ TABLE OF CONTENTS:
 >> About Page
 >> 404 Page
 >> Faq Page
+>> Service Single
+>> Doctor Page
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;700&family=Rubik:wght@500;600;700&display=swap");
 /* Author CSS */
@@ -887,6 +889,9 @@ nav {
 
 .padding-bottom-40 {
   padding-bottom: 40px; }
+
+.padding-bottom-45 {
+  padding-bottom: 45px; }
 
 .padding-bottom-50 {
   padding-bottom: 50px; }
@@ -3202,3 +3207,190 @@ nav {
   @media (max-width: 991px) {
     .m-faq-area {
       padding-bottom: 50px; } }
+
+/* Service Single */
+.service-wrapper .ser-cont img {
+  margin-bottom: 50px; }
+
+.service-wrapper .ser-cont h3 {
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif; }
+
+.service-wrapper .ser-cont p {
+  margin-bottom: 20px; }
+
+.service-wrapper .ser-cont .cont-list-wrapper .cont-list {
+  margin-bottom: 30px; }
+  .service-wrapper .ser-cont .cont-list-wrapper .cont-list h4 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .service-wrapper .ser-cont .cont-list-wrapper .cont-list ul li {
+    text-transform: capitalize; }
+    .service-wrapper .ser-cont .cont-list-wrapper .cont-list ul li::before {
+      content: '\eed8';
+      font-family: 'icofont';
+      margin-right: 5px; }
+
+.service-wrapper .service-list-wrap .service-list {
+  margin-bottom: 30px; }
+  .service-wrapper .service-list-wrap .service-list h4 {
+    margin-bottom: 20px; }
+  .service-wrapper .service-list-wrap .service-list .single-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+    padding: 5px 0; }
+    .service-wrapper .service-list-wrap .service-list .single-list .title {
+      font-weight: 500; }
+    .service-wrapper .service-list-wrap .service-list .single-list .amount {
+      font-weight: 300;
+      margin-left: 30px; }
+
+.service-wrapper .team-area {
+  background: #ffffff; }
+  .service-wrapper .team-area h3 {
+    font-weight: "Rubik", sans-serif;
+    margin-bottom: 30px; }
+
+.service-wrapper .ser-sidebar .ser-widget {
+  margin-bottom: 30px; }
+  .service-wrapper .ser-sidebar .ser-widget h4 {
+    margin-bottom: 20px; }
+  .service-wrapper .ser-sidebar .ser-widget.serWid-list .card {
+    border: 1px solid #eaeaea;
+    margin-bottom: 10px; }
+    .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header {
+      background: #ffffff;
+      padding: 0;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header:hover {
+        background: #1ac167; }
+        .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header:hover h5 a {
+          color: #ffffff; }
+      .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header h5 {
+        font-family: "Rubik", sans-serif;
+        font-weight: 700; }
+        .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header h5 a {
+          color: #0b114a;
+          display: block;
+          width: 100%;
+          padding: 10px;
+          position: relative; }
+          .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header h5 a.collapsed::after {
+            content: '\eab8'; }
+          .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-header h5 a::after {
+            content: '\eab2';
+            font-family: 'icofont';
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 10px; }
+    .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-body {
+      padding: 10px; }
+      .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-body ul li {
+        line-height: 1.7; }
+        .service-wrapper .ser-sidebar .ser-widget.serWid-list .card .card-body ul li::before {
+          content: '\ea5d';
+          font-family: 'icofont';
+          margin-right: 10px; }
+  .service-wrapper .ser-sidebar .ser-widget.wrk-hr {
+    background: #1ac167;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; }
+    .service-wrapper .ser-sidebar .ser-widget.wrk-hr h4,
+    .service-wrapper .ser-sidebar .ser-widget.wrk-hr p {
+      color: #ffffff; }
+    .service-wrapper .ser-sidebar .ser-widget.wrk-hr .wrk-list-wrapper .single-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border-bottom: 1px solid #ffffff;
+      margin-bottom: 10px;
+      padding: 5px 0;
+      color: #ffffff; }
+      .service-wrapper .ser-sidebar .ser-widget.wrk-hr .wrk-list-wrapper .single-list:last-child {
+        margin-bottom: 0;
+        border-bottom: 1px solid transparent; }
+      .service-wrapper .ser-sidebar .ser-widget.wrk-hr .wrk-list-wrapper .single-list .title {
+        font-weight: 400;
+        text-transform: capitalize; }
+      .service-wrapper .ser-sidebar .ser-widget.wrk-hr .wrk-list-wrapper .single-list .amount {
+        font-weight: 400;
+        margin-left: 30px;
+        text-transform: capitalize; }
+  .service-wrapper .ser-sidebar .ser-widget.help-line {
+    background: #0b114a;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px; }
+    .service-wrapper .ser-sidebar .ser-widget.help-line .icon {
+      font-size: 60px;
+      color: #ffffff; }
+    .service-wrapper .ser-sidebar .ser-widget.help-line h3,
+    .service-wrapper .ser-sidebar .ser-widget.help-line h4 {
+      color: #ffffff; }
+    .service-wrapper .ser-sidebar .ser-widget.help-line h3 {
+      margin-bottom: 10px; }
+
+/* Doctor Page */
+.doc-team-area::after {
+  display: none; }
+
+.doc-team-area .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .doc-team-area .button-group button {
+    border-radius: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(86, 86, 86, 0.05);
+    box-shadow: 0px 0px 30px 0px rgba(86, 86, 86, 0.05);
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    text-transform: capitalize;
+    margin-right: 30px;
+    min-width: 120px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    margin-bottom: 30px;
+    color: #0b114a;
+    position: relative;
+    z-index: 1; }
+    .doc-team-area .button-group button:last-child {
+      margin-right: initial; }
+    .doc-team-area .button-group button.active {
+      background: #1ac167;
+      color: #ffffff;
+      color: #ffffff; }
+    .doc-team-area .button-group button:hover {
+      background: #1ac167;
+      color: #ffffff; }
