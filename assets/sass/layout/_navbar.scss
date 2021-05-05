@@ -1,0 +1,194 @@
+/* Navbar */
+/* Navbar */
+nav {
+    display: flex !important;
+    justify-content: flex-end;
+
+    .main-menu {
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right: 42px;
+            line-height: 1.7;
+            z-index: 5;
+
+            @include desktop {
+                margin-right: 20px;
+            }
+
+            &.current {
+                a {
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+
+                    }
+                }
+            }
+
+            &.has-submenu {
+                &::after {
+                    content: '\f078';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    color: $secondary-color;
+                    font-size: 10px;
+                    margin-left: 5px;
+                    transition: $transition;
+
+                    @include mobile-device {
+                        display: none;
+                    }
+                }
+
+
+            }
+
+            a {
+                color: $secondary-color;
+                padding: 20px 0;
+                font-weight: 500;
+                display: inline-block;
+                font-size: 16px;
+                text-transform: capitalize;
+
+            }
+
+            @include large-device {
+
+                // submenu
+                .submenu {
+                    position: absolute;
+                    border-top: 2px solid $white-color;
+                    border-radius: 5px;
+                    width: 220px;
+                    top: 110%;
+                    left: 0;
+                    background: $primary-color;
+                    padding: 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: $transition;
+
+                    li {
+                        display: block;
+                        margin-right: initial;
+
+                        a {
+                            color: $white-color;
+                            display: block;
+                            padding: 6px;
+                            width: 100%;
+                        }
+
+                    }
+                }
+
+                &:hover {
+                    &.has-submenu {
+                        &::after {
+                            color: $primary-color;
+                        }
+                    }
+
+                    a {
+                        color: $primary-color;
+
+                    }
+
+                    .submenu {
+                        top: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+        }
+
+        // home 2 main menu
+        &.main-menu2 {
+            li {
+                &.has-submenu {
+                    &::after {
+                        content: '\f078';
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                        color: $secondary-color;
+                        font-size: 10px;
+                        margin-left: 5px;
+
+                        @include mobile-device {
+                            display: none;
+                        }
+                    }
+
+
+                }
+
+                @include large-device {
+                    &:hover {
+                        &.has-submenu {
+                            &::after {
+                                color: $home2-primary-color;
+                            }
+                        }
+
+                        a {
+                            color: $home2-primary-color;
+
+                        }
+                    }
+
+                    .submenu {
+                        background: $home2-primary-color;
+
+                        li {
+                            a {
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.container-wrapper {
+    position: relative;
+}
+
+// mobile menu
+.mean-container {
+
+    // home 2 monile menu
+    &.mobile-menu2 {
+        .meanmenu-reveal {
+            color: $home2-primary-color;
+
+            @include landscape-phone {
+                top: -6px;
+            }
+
+            @include portrait-phone {
+                top: -8px;
+            }
+
+            span {
+                background: $home2-primary-color;
+            }
+        }
+
+        .mean-nav {
+            background: $home2-primary-color;
+        }
+    }
+
+    // home 1 main menu
+    .mean-nav {
+        background: $primary-color;
+    }
+
+}

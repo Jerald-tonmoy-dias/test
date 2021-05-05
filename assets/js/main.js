@@ -39,6 +39,40 @@
         });
     });
 
+    // vdo popup activation
+    $('.popup-link').magnificPopup({
+        type: 'iframe',
+        // other options
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">'+
+                    '<div class="mfp-close"></div>'+
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                    '</div>',
+        
+            patterns: {
+            youtube: {
+                index: 'youtube.com/', 
+        
+                id: 'v=', 
+        
+                src: 'https://www.youtube.com/embed/%id%?autoplay=1' 
+            },
+            vimeo: {
+                index: 'vimeo.com/',
+                id: '/',
+                src: '//player.vimeo.com/video/%id%?autoplay=1'
+            },
+            gmaps: {
+                index: '//maps.google.',
+                src: '%id%&output=embed'
+            }
+        
+            },
+        
+            srcAction: 'iframe_src',
+        }
+        });
+
     // hero slider
     $('.hero-slider-active').slick({
         dots: true,
@@ -55,6 +89,16 @@
               }
             }
             ]
+      });
+    // mblog-slider
+    $('.mblog-slider-active').slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        prevArrow : '<i class="icofont-simple-left slickArrow arrow-prev"></i>',
+        nextArrow : '<i class="icofont-simple-right slickArrow  arrow-next"></i>',
+        speed: 300,
+        slidesToShow: 1
       });
 
     // hero2 slider
@@ -127,31 +171,31 @@
     ]
     });
 
-// ht-blog-area
-$('.ht-blog-slider-active').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    arrows: false,
-    responsive: [
-        {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-        }
-        },
-        {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-        }
-        }
-    ]
-    });
+    // ht-blog-area
+    $('.ht-blog-slider-active').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false,
+        responsive: [
+            {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
 
     // ht-testi-active
     $('.ht-testi-active').slick({

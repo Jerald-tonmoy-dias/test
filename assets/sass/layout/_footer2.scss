@@ -1,0 +1,102 @@
+/* Footer Section 2 */
+.footer-area2 {
+    position: relative;
+    overflow: hidden;
+    background: $gray-bg;
+
+    .foo_top_shapes {
+        .vec11 {
+            width: inherit;
+            position: absolute;
+            bottom: -59%;
+            left: 0;
+
+            // @include mobile-device {
+            //     display: none;
+            // }
+        }
+
+        .vec22 {
+            width: inherit;
+            position: absolute;
+            bottom: -105%;
+            right: -60px;
+
+            // @include mobile-device {
+            //     display: none;
+            // }
+        }
+
+
+    }
+
+    .foo_top {
+        position: initial;
+        overflow: hidden;
+        background: initial;
+        padding-top: 230px;
+        padding-bottom: 20px;
+
+        .foo-widget {
+
+            .social-links {
+                a {
+                    span {
+                        color: $white-color;
+                        background: $secondary-color;
+
+                        &.active {
+                            background: $home2-primary-color;
+                            color: $white-color;
+                        }
+
+                        &:hover {
+                            background: $home2-primary-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        color: $secondary-color;
+
+                        &:hover {
+                            color: $home2-primary-color;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .foo_btm {
+        background-color: initial;
+
+        .copyright-text {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid $border-color;
+
+            span {
+                color: $secondary-color;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: capitalize;
+
+                a {
+                    font-weight: 700;
+                    color: $secondary-color;
+
+                    &:hover {
+                        color: $home2-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+}

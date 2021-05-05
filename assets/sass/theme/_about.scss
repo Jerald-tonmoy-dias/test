@@ -1,0 +1,42 @@
+/* About Page */
+.m-about-area {
+    .about-counter {
+        .single-counter {
+            background: $blue-bg;
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+            .icon-box {
+                text-align: center;
+                margin-bottom: 20px;
+
+                span {
+                    color: $white-color;
+                    font-size: 30px;
+                }
+            }
+
+            .cont-box {
+                text-align: center;
+
+                h3 {
+                    margin-bottom: 20px;
+
+                    &.med-fil {
+                        &::after {
+                            content: 'M';
+                        }
+                    }
+                }
+
+                h3,
+                h6 {
+                    font-family: $heading-font;
+                    font-weight: 700;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

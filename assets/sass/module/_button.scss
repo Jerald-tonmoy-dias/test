@@ -1,0 +1,154 @@
+/* Button */
+.btn1 {
+    font-family: $heading-font;
+    font-weight: 600;
+    z-index: 11;
+    font-size: 16px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: $transition;
+    display: inline-block;
+    border-radius: 5px;
+    color: $white-color;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $primary-color;
+        z-index: -1;
+        transition: $transition;
+    }
+
+    @include portrait-phone {
+        padding: 8px 20px;
+    }
+
+    @include desktop {
+        padding: 8px 15px;
+    }
+
+    @include screen-1200 {
+        padding: 10px 20px;
+    }
+
+    &:hover {
+        &::before {
+            right: -100%;
+        }
+
+        border: 1px solid $primary-color;
+        color: $primary-color;
+    }
+}
+
+.btn2 {
+    font-family: $heading-font;
+    font-weight: 600;
+    z-index: 11;
+    font-size: 16px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    transition: $transition;
+    display: inline-block;
+    border-radius: 5px;
+    color: $secondary-color;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+    border: 1px solid $btn-color;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background: $btn-color;
+        z-index: -1;
+        transition: $transition;
+    }
+
+    @include portrait-phone {
+        padding: 8px 20px;
+    }
+
+    @include desktop {
+        padding: 8px 15px;
+    }
+
+    @include screen-1200 {
+        padding: 10px 20px;
+    }
+
+    &:hover {
+        &::before {
+            left: 0;
+        }
+
+        border: 1px solid transparent;
+        color: $white-color;
+    }
+}
+
+.btn3 {
+    font-family: $heading-font;
+    font-weight: 600;
+    z-index: 11;
+    font-size: 16px;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    transition: $transition;
+    display: inline-block;
+    border-radius: 5px;
+    color: $white-color;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+    text-align: center;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $home2-primary-color;
+        z-index: -1;
+        transition: $transition;
+    }
+
+    @include portrait-phone {
+        padding: 8px 20px;
+    }
+
+    @include desktop {
+        padding: 8px 15px;
+    }
+
+    @include screen-1200 {
+        padding: 10px 20px;
+    }
+
+    &:hover {
+        &::before {
+            right: -100%;
+        }
+
+        border: 1px solid $home2-primary-color;
+        color: $home2-primary-color;
+    }
+}

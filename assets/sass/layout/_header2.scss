@@ -1,0 +1,85 @@
+/* Header Section 2 */
+
+.header-area2 {
+
+    // contact box
+    .contact-box {
+        span {
+            text-transform: capitalize;
+        }
+    }
+
+    // header search
+    .header-search {
+        form {
+            display: flex;
+
+            input {
+                width: 85%;
+                border: 1px solid $white-color;
+                background: $blue-bg;
+                outline: none;
+                padding: 10px 15px;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                color: $white-color;
+            }
+
+            button {
+                width: 15%;
+                border: 1px solid $white-color;
+                background: $white-color;
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+                outline: none;
+                padding: 10px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    // social icons
+    .social-icons {
+        @include portrait-phone {
+            margin-top: 20px;
+        }
+
+        @include landscape-phone {
+            margin-top: 20px;
+        }
+
+        a {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: initial;
+            }
+
+            span {
+                color: $white-color;
+                border: 1px solid $white-color;
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 5px;
+                transition: $transition;
+
+                &.active {
+                    background: $home2-primary-color;
+                    border: 1px solid transparent;
+
+                }
+
+                &:hover {
+                    background: $home2-primary-color;
+                    border: 1px solid transparent;
+
+                }
+            }
+        }
+    }
+}

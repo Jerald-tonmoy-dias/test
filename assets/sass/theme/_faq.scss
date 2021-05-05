@@ -1,0 +1,8 @@
+/* Faq page */
+.m-faq-area {
+    padding-bottom: 85px;
+
+    @include mobile-device {
+        padding-bottom: 50px;
+    }
+}

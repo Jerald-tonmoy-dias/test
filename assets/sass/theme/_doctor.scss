@@ -1,0 +1,49 @@
+/* Doctor Page */
+.doc-team-area {
+    &::after {
+        display: none;
+    }
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        // gallery nav
+        button {
+            border-radius: 10px;
+            background: $white-color;
+            box-shadow: 0px 0px 30px 0px rgba(86, 86, 86, 0.05);
+            font-family: $heading-font;
+            font-weight: 700;
+            padding: 10px;
+            border: none;
+            text-transform: capitalize;
+            margin-right: 30px;
+            min-width: 120px;
+            transition: $transition;
+            margin-bottom: 30px;
+            color: $secondary-color;
+            position: relative;
+            z-index: 1;
+
+            &:last-child {
+                margin-right: initial;
+            }
+
+            &.active {
+                background: $primary-color;
+                color: $white-color;
+
+                color: $white-color;
+            }
+
+            &:hover {
+                background: $primary-color;
+                color: $white-color;
+            }
+
+        }
+    }
+
+}

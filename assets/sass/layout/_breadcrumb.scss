@@ -1,0 +1,78 @@
+/* Breadcrumb Section */
+.breadcrumb-area {
+    padding-top: 120px;
+    padding-bottom: 95px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.special-pad {
+        padding-bottom: 168px;
+
+        @include landscape-phone {
+            padding-bottom: 120px;
+
+        }
+
+        @include portrait-phone {
+            padding-bottom: 120px;
+
+        }
+    }
+
+    @include landscape-phone {
+        padding-bottom: 70px;
+        padding-top: 100px;
+    }
+
+    @include portrait-phone {
+        padding-bottom: 70px;
+        padding-top: 100px;
+    }
+
+    nav {
+        z-index: 1;
+        flex-direction: column;
+    }
+
+    h2 {
+        color: $secondary-color;
+        text-align: center;
+        font-family: $heading-font;
+    }
+
+    .breadcrumb {
+        background: none;
+        display: flex;
+        justify-content: center;
+
+        .breadcrumb-item {
+            color: $secondary-color;
+            text-transform: capitalize;
+
+            &.active {
+                font-size: 18px;
+                font-weight: 700;
+
+                &::before {
+                    color: $secondary-color;
+                }
+            }
+
+            a {
+                color: $secondary-color;
+                text-transform: capitalize;
+                transition: .3s;
+                font-size: 18px;
+                font-weight: 700;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+    }
+}
