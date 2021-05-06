@@ -9,11 +9,11 @@
 
             .icon-box {
                 text-align: center;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 span {
                     color: $white-color;
-                    font-size: 30px;
+                    font-size: 50px;
                 }
             }
 
@@ -38,5 +38,14 @@
                 }
             }
         }
+    }
+}
+
+// ab-testi-area
+.ab-testi-area {
+    padding-bottom: 125px;
+
+    @include portrait-phone {
+        padding-bottom: 80px;
     }
 }

@@ -116,7 +116,6 @@ img {
   display: block; }
 
 /* Navbar */
-/* Navbar */
 nav {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -417,6 +416,9 @@ nav {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+        .footer-area .foo_top .foo-widget ul li span {
+          margin-right: 10px;
+          display: inline-block; }
         .footer-area .foo_top .foo-widget ul li a {
           color: #0b114a; }
           .footer-area .foo_top .foo-widget ul li a:hover {
@@ -556,6 +558,9 @@ nav {
 /* Header Section 2 */
 .header-area2 .contact-box span {
   text-transform: capitalize; }
+
+.header-area2 .header-top {
+  padding-top: 5px; }
 
 .header-area2 .header-search form {
   display: -webkit-box;
@@ -1583,7 +1588,11 @@ nav {
     background: #fafafa;
     border-radius: 5px;
     border: none;
-    outline: none; }
+    outline: none;
+    text-transform: capitalize; }
+    .booking-area .booking-form .form-item2 select,
+    .booking-area .booking-form .form-item2 option {
+      text-transform: capitalize; }
   .booking-area .booking-form .btn1.form-item2 {
     margin-bottom: initial; }
 
@@ -2029,10 +2038,10 @@ nav {
 
 .faq-area {
   position: relative;
-  padding-bottom: 110px; }
+  padding-bottom: 100px; }
   @media (max-width: 991px) {
     .faq-area {
-      padding-bottom: 60px; } }
+      padding-bottom: 50px; } }
   .faq-area .faq-shapes img {
     width: initial; }
   .faq-area .faq-shapes .vec1 {
@@ -3042,7 +3051,7 @@ nav {
         text-transform: capitalize; }
 
 .ht-blog-area {
-  padding-bottom: 160px; }
+  padding-bottom: 130px; }
   .ht-blog-area .ht-blog-slider-active .slick-dots {
     position: absolute;
     bottom: -30px;
@@ -3182,10 +3191,10 @@ nav {
   margin-bottom: 30px; }
   .m-about-area .about-counter .single-counter .icon-box {
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
     .m-about-area .about-counter .single-counter .icon-box span {
       color: #ffffff;
-      font-size: 30px; }
+      font-size: 50px; }
   .m-about-area .about-counter .single-counter .cont-box {
     text-align: center; }
     .m-about-area .about-counter .single-counter .cont-box h3 {
@@ -3197,6 +3206,12 @@ nav {
       font-family: "Rubik", sans-serif;
       font-weight: 700;
       color: #ffffff; }
+
+.ab-testi-area {
+  padding-bottom: 125px; }
+  @media (max-width: 575.98px) {
+    .ab-testi-area {
+      padding-bottom: 80px; } }
 
 /* 404 Page*/
 .error-area .error-wrapper h2 {
@@ -3210,6 +3225,9 @@ nav {
   @media (max-width: 991px) {
     .m-faq-area {
       padding-bottom: 50px; } }
+  @media (max-width: 575.98px) {
+    .m-faq-area {
+      padding-bottom: 30px; } }
 
 /* Service Single */
 .service-wrapper .ser-cont img {

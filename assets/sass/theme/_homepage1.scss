@@ -303,6 +303,12 @@
             border-radius: 5px;
             border: none;
             outline: none;
+            text-transform: capitalize;
+
+            select,
+            option {
+                text-transform: capitalize;
+            }
         }
 
         .btn1.form-item2 {
@@ -956,10 +962,10 @@
 // faq area
 .faq-area {
     position: relative;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
 
     @include mobile-device {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
 
     .faq-shapes {
